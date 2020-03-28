@@ -10,6 +10,7 @@
   -- interface ethernet 0/2 on R6-200  has been shutdown to demonstrate a network change
   
  ## State Difference found ->
+  #pyats diff good1 bad1
   
     --- good1/interface_ios_R6-200_ops.txt
     +++ bad1/interface_ios_R6-200_ops.txt
@@ -45,3 +46,5 @@
     -  enabled: True
     +  oper_status: down
     -  oper_status: up
+
+
