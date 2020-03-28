@@ -1,6 +1,3 @@
- # pyATS docs
-  https://developer.cisco.com/docs/pyats/
-
 # Statefull_validation_pyATS
 
 
@@ -75,3 +72,9 @@
     -              nbr_event_count: 6
     -              nbr_retrans_qlen: 0
     -           passive: False
+    
+    
+    
+    
+    # pyATS docs
+  https://developer.cisco.com/docs/pyats/
