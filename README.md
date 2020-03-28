@@ -3,4 +3,4 @@
 ![](Topology.png)
 
 ## Creating Havoc
-  -- interface ethernet 0/2 has been shutdown to demonstrate a change on R6-200 
+  -- interface ethernet 0/2 on R6-200  has been shutdown to demonstrate a network change
