@@ -1,0 +1,854 @@
+{
+  "_exclude": [
+    "if_handle",
+    "keepalives",
+    "last_reset",
+    "reset_reason",
+    "foreign_port",
+    "local_port",
+    "msg_rcvd",
+    "msg_sent",
+    "up_down",
+    "bgp_table_version",
+    "routing_table_version",
+    "tbl_ver",
+    "table_version",
+    "memory_usage",
+    "updates",
+    "mss",
+    "total",
+    "total_bytes",
+    "up_time",
+    "bgp_negotiated_keepalive_timers",
+    "hold_time",
+    "keepalive_interval",
+    "sent",
+    "received",
+    "status_codes",
+    "holdtime",
+    "router_id",
+    "connections_dropped",
+    "connections_established",
+    "advertised",
+    "prefixes",
+    "routes",
+    "state_pfxrcd"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "instance": {
+      "default": {
+        "bgp_id": 300,
+        "vrf": {
+          "default": {
+            "cluster_id": "9.9.9.9",
+            "neighbor": {
+              "10.1.1.1": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "bgp_table_version": 26,
+                    "path": {
+                      "memory_usage": 2320,
+                      "total_entries": 29
+                    },
+                    "prefixes": {
+                      "memory_usage": 3500,
+                      "total_entries": 25
+                    },
+                    "routing_table_version": 26,
+                    "total_memory": 7500
+                  }
+                },
+                "bgp_negotiated_capabilities": {
+                  "enhanced_refresh": "advertised and received",
+                  "four_octets_asn": "advertised and received",
+                  "route_refresh": "advertised and received(new)",
+                  "stateful_switchover": "NO for session 1"
+                },
+                "bgp_negotiated_keepalive_timers": {
+                  "hold_time": 180,
+                  "keepalive_interval": 60
+                },
+                "bgp_neighbor_counters": {
+                  "messages": {
+                    "received": {
+                      "keepalives": 20,
+                      "notifications": 0,
+                      "opens": 1,
+                      "updates": 6
+                    },
+                    "sent": {
+                      "keepalives": 19,
+                      "notifications": 0,
+                      "opens": 1,
+                      "updates": 8
+                    }
+                  }
+                },
+                "bgp_session_transport": {
+                  "connection": {
+                    "last_reset": "never",
+                    "state": "Established"
+                  },
+                  "transport": {
+                    "foreign_host": "10.1.1.1",
+                    "foreign_port": "179",
+                    "local_host": "10.1.1.2",
+                    "local_port": "47274",
+                    "mss": 1460
+                  }
+                },
+                "bgp_version": 4,
+                "remote_as": 300,
+                "session_state": "Established",
+                "shutdown": false
+              },
+              "200.1.3.2": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "bgp_table_version": 26,
+                    "path": {
+                      "memory_usage": 2320,
+                      "total_entries": 29
+                    },
+                    "prefixes": {
+                      "memory_usage": 3500,
+                      "total_entries": 25
+                    },
+                    "routing_table_version": 26,
+                    "total_memory": 7500
+                  }
+                },
+                "bgp_negotiated_capabilities": {
+                  "enhanced_refresh": "advertised and received",
+                  "four_octets_asn": "advertised and received",
+                  "route_refresh": "advertised and received(new)",
+                  "stateful_switchover": "NO for session 1"
+                },
+                "bgp_negotiated_keepalive_timers": {
+                  "hold_time": 180,
+                  "keepalive_interval": 60
+                },
+                "bgp_neighbor_counters": {
+                  "messages": {
+                    "received": {
+                      "keepalives": 18,
+                      "notifications": 0,
+                      "opens": 1,
+                      "updates": 10
+                    },
+                    "sent": {
+                      "keepalives": 19,
+                      "notifications": 0,
+                      "opens": 1,
+                      "updates": 9
+                    }
+                  }
+                },
+                "bgp_session_transport": {
+                  "connection": {
+                    "last_reset": "never",
+                    "state": "Established"
+                  },
+                  "transport": {
+                    "foreign_host": "200.1.3.2",
+                    "foreign_port": "179",
+                    "local_host": "200.1.3.1",
+                    "local_port": "58961",
+                    "mss": 1460
+                  }
+                },
+                "bgp_version": 4,
+                "remote_as": 400,
+                "session_state": "Established",
+                "shutdown": false
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "routes_per_peer": {
+    "instance": {
+      "default": {
+        "vrf": {
+          "default": {
+            "neighbor": {
+              "10.1.1.1": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "advertised": {
+                      "10.1.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.1.2.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 20,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.1.3.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.10.10.10/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 11,
+                            "next_hop": "10.1.3.2",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "100.1.2.0/24": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200 100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "12.12.1.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 0,
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "i",
+                            "path": "400",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.1.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.122.0": {
+                        "index": {
+                          "1": {
+                            "metric": 0,
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "i",
+                            "path": "400",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.2.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.3.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "200.1.2.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "200.1.3.0": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "5.5.5.5/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "6.6.6.6/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "7.7.7.7/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "8.8.8.8/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 11,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "9.9.9.9/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      }
+                    },
+                    "input_queue": 0,
+                    "msg_rcvd": 27,
+                    "msg_sent": 28,
+                    "output_queue": 0,
+                    "routes": {
+                      "1.1.1.1/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 21,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "10.1.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "10.1.2.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "100.1.3.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "172.16.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 20,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "172.16.2.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 20,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "172.16.3.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "2.2.2.2/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 11,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "3.3.3.3/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 21,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "4.4.4.4/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "8.8.8.8/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*",
+                            "weight": 0
+                          }
+                        }
+                      }
+                    },
+                    "state_pfxrcd": "11",
+                    "tbl_ver": 26,
+                    "up_down": "00:17:52"
+                  }
+                },
+                "remote_as": 300
+              },
+              "200.1.3.2": {
+                "address_family": {
+                  "ipv4 unicast": {
+                    "advertised": {
+                      "1.1.1.1/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 21,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "10.1.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.1.2.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 20,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.1.3.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "10.10.10.10/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 11,
+                            "next_hop": "10.1.3.2",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "100.1.3.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "172.16.1.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 20,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "172.16.2.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 20,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "172.16.3.0/24": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "2.2.2.2/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 11,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "200.1.3.0": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "3.3.3.3/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 21,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "4.4.4.4/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 100,
+                            "metric": 0,
+                            "next_hop": "100.1.3.1",
+                            "origin_codes": "?",
+                            "path": "100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "8.8.8.8/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 11,
+                            "next_hop": "10.1.1.1",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      },
+                      "9.9.9.9/32": {
+                        "index": {
+                          "1": {
+                            "localprf": 0,
+                            "next_hop": "0.0.0.0",
+                            "origin_codes": "?",
+                            "status_codes": "*>",
+                            "weight": 32768
+                          }
+                        }
+                      }
+                    },
+                    "input_queue": 0,
+                    "msg_rcvd": 29,
+                    "msg_sent": 29,
+                    "output_queue": 0,
+                    "routes": {
+                      "100.1.2.0/24": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200 100",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "12.12.1.0/24": {
+                        "index": {
+                          "1": {
+                            "metric": 0,
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "i",
+                            "path": "400",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.1.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.122.0": {
+                        "index": {
+                          "1": {
+                            "metric": 0,
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "i",
+                            "path": "400",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.2.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "192.168.3.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "200.1.2.0": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "3.3.3.3/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "5.5.5.5/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "6.6.6.6/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      },
+                      "7.7.7.7/32": {
+                        "index": {
+                          "1": {
+                            "next_hop": "200.1.3.2",
+                            "origin_codes": "?",
+                            "path": "400 200",
+                            "status_codes": "*>",
+                            "weight": 0
+                          }
+                        }
+                      }
+                    },
+                    "state_pfxrcd": "11",
+                    "tbl_ver": 26,
+                    "up_down": "00:17:47"
+                  }
+                },
+                "remote_as": 400
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

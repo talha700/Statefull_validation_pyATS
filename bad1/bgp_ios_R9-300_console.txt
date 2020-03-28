@@ -1,0 +1,452 @@
++++ R9-300: executing command 'show bgp all summary' +++
+show bgp all summary
+For address family: IPv4 Unicast
+BGP router identifier 9.9.9.9, local AS number 300
+BGP table version is 36, main routing table version 36
+25 network entries using 3500 bytes of memory
+29 path entries using 2320 bytes of memory
+11/11 BGP path/bestpath attribute entries using 1584 bytes of memory
+4 BGP AS-PATH entries using 96 bytes of memory
+0 BGP route-map cache entries using 0 bytes of memory
+0 BGP filter-list cache entries using 0 bytes of memory
+BGP using 7500 total bytes of memory
+BGP activity 30/5 prefixes, 34/5 paths, scan interval 60 secs
+
+Neighbor        V           AS MsgRcvd MsgSent   TblVer  InQ OutQ Up/Down  State/PfxRcd
+10.1.1.1        4          300      31      33       36    0    0 00:21:15       11
+200.1.3.2       4          400      34      33       36    0    0 00:21:10       11
+R9-300#
++++ R9-300: executing command 'show ip bgp template peer-session' +++
+show ip bgp template peer-session
+No templates configured
+
+R9-300#
++++ R9-300: executing command 'show ip bgp template peer-policy' +++
+show ip bgp template peer-policy
+No templates configured
+
+R9-300#
++++ R9-300: executing command 'show vrf detail | inc \(VRF' +++
+show vrf detail | inc \(VRF
+R9-300#
++++ R9-300: executing command 'show bgp all cluster-ids' +++
+show bgp all cluster-ids
+Global cluster-id: 9.9.9.9 (configured: 0.0.0.0)
+BGP client-to-client reflection:         Configured    Used
+  all (inter-cluster and intra-cluster): ENABLED
+  intra-cluster:                         ENABLED       ENABLED
+
+List of cluster-ids:
+Cluster-id     #-neighbors C2C-rfl-CFG C2C-rfl-USE
+R9-300#
++++ R9-300: executing command 'show ip bgp all dampening parameters' +++
+show ip bgp all dampening parameters
+For address family: IPv4 Unicast
+
+% dampening not enabled for base
+
+For address family: IPv4 Multicast
+
+% dampening not enabled for base
+
+For address family: MVPNv4 Unicast
+
+% dampening not enabled for base
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors' +++
+show bgp all neighbors
+For address family: IPv4 Unicast
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+  BGP version 4, remote router ID 8.8.8.8
+  BGP state = Established, up for 00:21:16
+  Last read 00:00:45, last write 00:00:05, hold time is 180, keepalive interval is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+    Enhanced Refresh Capability: advertised and received
+    Multisession Capability: 
+    Stateful switchover support enabled: NO for session 1
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+    Updates:               10          6
+    Keepalives:            22         24
+    Route Refresh:          0          0
+    Total:                 33         31
+  Default minimum time between advertisement runs is 0 seconds
+
+  Address tracking is enabled, the RIB does have a route to 10.1.1.1
+  Connections established 1; dropped 0
+  Last reset never
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is disabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 255
+Local host: 10.1.1.2, Local port: 47274
+Foreign host: 10.1.1.1, Foreign port: 179
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x13B035):
+Timer          Starts    Wakeups            Next
+Retrans            30          0             0x0
+TimeWait            0          0             0x0
+AckHold            27         25             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger          500        499        0x13B21E
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss:  391588172  snduna:  391589260  sndnxt:  391589260
+irs: 3001391056  rcvnxt: 3001391921
+
+sndwnd:  15297  scale:      0  maxrcvwnd:  16384
+rcvwnd:  15520  scale:      0  delrcvwnd:    864
+
+SRTT: 982 ms, RTTO: 1129 ms, RTV: 147 ms, KRTT: 0 ms
+minRTT: 1 ms, maxRTT: 1000 ms, ACK hold: 200 ms
+Status Flags: active open
+Option Flags: nagle, path mtu capable
+IP Precedence value : 6
+
+Datagrams (max data segment is 1460 bytes):
+Rcvd: 57 (out of order: 0), with data: 27, total data bytes: 864
+Sent: 57 (retransmit: 0, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 29, total data bytes: 1087
+
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+TCP Semaphore      0xF58D467C  FREE 
+
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+  BGP version 4, remote router ID 200.1.3.2
+  BGP state = Established, up for 00:21:11
+  Last read 00:00:05, last write 00:00:39, hold time is 180, keepalive interval is 60 seconds
+  Neighbor sessions:
+    1 active, is not multisession capable (disabled)
+  Neighbor capabilities:
+    Route refresh: advertised and received(new)
+    Four-octets ASN Capability: advertised and received
+    Address family IPv4 Unicast: advertised and received
+    Enhanced Refresh Capability: advertised and received
+    Multisession Capability: 
+    Stateful switchover support enabled: NO for session 1
+  Message statistics:
+    InQ depth is 0
+    OutQ depth is 0
+    
+                         Sent       Rcvd
+    Opens:                  1          1
+    Notifications:          0          0
+    Updates:                9         12
+    Keepalives:            23         21
+    Route Refresh:          0          0
+    Total:                 33         34
+  Default minimum time between advertisement runs is 30 seconds
+
+  Address tracking is enabled, the RIB does have a route to 200.1.3.2
+  Connections established 1; dropped 0
+  Last reset never
+  Transport(tcp) path-mtu-discovery is enabled
+  Graceful-Restart is disabled
+Connection state is ESTAB, I/O status: 1, unread input bytes: 0            
+Connection is ECN Disabled, Mininum incoming TTL 0, Outgoing TTL 1
+Local host: 200.1.3.1, Local port: 58961
+Foreign host: 200.1.3.2, Foreign port: 179
+Connection tableid (VRF): 0
+Maximum output segment queue size: 50
+
+Enqueued packets for retransmit: 0, input: 0  mis-ordered: 0 (0 bytes)
+
+Event Timers (current time is 0x13B036):
+Timer          Starts    Wakeups            Next
+Retrans            26          0             0x0
+TimeWait            0          0             0x0
+AckHold            27         24             0x0
+SendWnd             0          0             0x0
+KeepAlive           0          0             0x0
+GiveUp              0          0             0x0
+PmtuAger          451        450        0x13B0BD
+DeadWait            0          0             0x0
+Linger              0          0             0x0
+ProcessQ            0          0             0x0
+
+iss:   95990613  snduna:   95991579  sndnxt:   95991579
+irs:  311567680  rcvnxt:  311568823
+
+sndwnd:  15419  scale:      0  maxrcvwnd:  16384
+rcvwnd:  15242  scale:      0  delrcvwnd:   1142
+
+SRTT: 969 ms, RTTO: 1216 ms, RTV: 247 ms, KRTT: 0 ms
+minRTT: 0 ms, maxRTT: 1000 ms, ACK hold: 200 ms
+Status Flags: active open
+Option Flags: nagle, path mtu capable, md5
+IP Precedence value : 6
+
+Datagrams (max data segment is 1460 bytes):
+Rcvd: 53 (out of order: 0), with data: 27, total data bytes: 1142
+Sent: 53 (retransmit: 0, fastretransmit: 0, partialack: 0, Second Congestion: 0), with data: 26, total data bytes: 965
+
+ Packets received in fast path: 0, fast processed: 0, slow path: 0
+ fast lock acquisition failures: 0, slow path: 0
+TCP Semaphore      0xF58D460C  FREE 
+
+
+For address family: IPv4 Multicast
+
+For address family: MVPNv4 Unicast
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 10.1.1.1 policy' +++
+show bgp all neighbors 10.1.1.1 policy
+ Neighbor: 10.1.1.1, Address-Family: IPv4 Unicast
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 200.1.3.2 policy' +++
+show bgp all neighbors 200.1.3.2 policy
+ Neighbor: 200.1.3.2, Address-Family: IPv4 Unicast
+R9-300#
++++ R9-300: executing command 'show bgp all' +++
+show bgp all
+For address family: IPv4 Unicast
+
+BGP table version is 36, local router ID is 9.9.9.9
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>i 1.1.1.1/32       100.1.3.1               21    100      0 100 ?
+ *>i 2.2.2.2/32       100.1.3.1               11    100      0 100 ?
+ *   3.3.3.3/32       200.1.3.2                              0 400 200 ?
+ *>i                  100.1.3.1               21    100      0 100 ?
+ *>i 4.4.4.4/32       100.1.3.1                0    100      0 100 ?
+ *>  5.5.5.5/32       200.1.3.2                              0 400 200 ?
+ *>  6.6.6.6/32       200.1.3.2                              0 400 200 ?
+ *>  7.7.7.7/32       200.1.3.2                              0 400 200 ?
+ * i 8.8.8.8/32       10.1.1.1                 0    100      0 ?
+ *>                   10.1.1.1                11         32768 ?
+ *>  9.9.9.9/32       0.0.0.0                  0         32768 ?
+ * i 10.1.1.0/24      10.1.1.1                 0    100      0 ?
+ *>                   0.0.0.0                  0         32768 ?
+ * i 10.1.2.0/24      10.1.1.1                 0    100      0 ?
+ *>                   10.1.1.1                20         32768 ?
+ *>  10.1.3.0/24      0.0.0.0                  0         32768 ?
+ *>  10.10.10.10/32   10.1.3.2                11         32768 ?
+ *>  12.12.1.0/24     200.1.3.2                0             0 400 i
+ *>  100.1.2.0/24     200.1.3.2                              0 400 200 100 ?
+ *>i 100.1.3.0/24     10.1.1.1                 0    100      0 ?
+ *>i 172.16.1.0/24    100.1.3.1               20    100      0 100 ?
+ *>i 172.16.2.0/24    100.1.3.1               20    100      0 100 ?
+ *>i 172.16.3.0/24    100.1.3.1                0    100      0 100 ?
+ *>  192.168.1.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.2.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.3.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.122.0    200.1.3.2                0             0 400 i
+ *>  200.1.2.0        200.1.3.2                              0 400 200 ?
+ *>  200.1.3.0        0.0.0.0                  0         32768 ?
+
+For address family: IPv4 Multicast
+
+
+For address family: MVPNv4 Unicast
+
+R9-300#
++++ R9-300: executing command 'show bgp all detail' +++
+show bgp all detail
+show bgp all detail
+              ^
+% Invalid input detected at '^' marker.
+
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 10.1.1.1 advertised-routes' +++
+show bgp all neighbors 10.1.1.1 advertised-routes
+For address family: IPv4 Unicast
+BGP table version is 36, local router ID is 9.9.9.9
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>  5.5.5.5/32       200.1.3.2                              0 400 200 ?
+ *>  6.6.6.6/32       200.1.3.2                              0 400 200 ?
+ *>  7.7.7.7/32       200.1.3.2                              0 400 200 ?
+ *>  8.8.8.8/32       10.1.1.1                11         32768 ?
+ *>  9.9.9.9/32       0.0.0.0                  0         32768 ?
+ *>  10.1.1.0/24      0.0.0.0                  0         32768 ?
+ *>  10.1.2.0/24      10.1.1.1                20         32768 ?
+ *>  10.1.3.0/24      0.0.0.0                  0         32768 ?
+ *>  10.10.10.10/32   10.1.3.2                11         32768 ?
+ *>  12.12.1.0/24     200.1.3.2                0             0 400 i
+ *>  100.1.2.0/24     200.1.3.2                              0 400 200 100 ?
+ *>  192.168.1.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.2.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.3.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.122.0    200.1.3.2                0             0 400 i
+ *>  200.1.2.0        200.1.3.2                              0 400 200 ?
+ *>  200.1.3.0        0.0.0.0                  0         32768 ?
+
+Total number of prefixes 17 
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 200.1.3.2 advertised-routes' +++
+show bgp all neighbors 200.1.3.2 advertised-routes
+For address family: IPv4 Unicast
+BGP table version is 36, local router ID is 9.9.9.9
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>i 1.1.1.1/32       100.1.3.1               21    100      0 100 ?
+ *>i 2.2.2.2/32       100.1.3.1               11    100      0 100 ?
+ *>i 3.3.3.3/32       100.1.3.1               21    100      0 100 ?
+ *>i 4.4.4.4/32       100.1.3.1                0    100      0 100 ?
+ *>  8.8.8.8/32       10.1.1.1                11         32768 ?
+ *>  9.9.9.9/32       0.0.0.0                  0         32768 ?
+ *>  10.1.1.0/24      0.0.0.0                  0         32768 ?
+ *>  10.1.2.0/24      10.1.1.1                20         32768 ?
+ *>  10.1.3.0/24      0.0.0.0                  0         32768 ?
+ *>  10.10.10.10/32   10.1.3.2                11         32768 ?
+ *>i 100.1.3.0/24     10.1.1.1                 0    100      0 ?
+ *>i 172.16.1.0/24    100.1.3.1               20    100      0 100 ?
+ *>i 172.16.2.0/24    100.1.3.1               20    100      0 100 ?
+ *>i 172.16.3.0/24    100.1.3.1                0    100      0 100 ?
+ *>  200.1.3.0        0.0.0.0                  0         32768 ?
+
+Total number of prefixes 15 
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 10.1.1.1 routes' +++
+show bgp all neighbors 10.1.1.1 routes
+For address family: IPv4 Unicast
+BGP table version is 36, local router ID is 9.9.9.9
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *>i 1.1.1.1/32       100.1.3.1               21    100      0 100 ?
+ *>i 2.2.2.2/32       100.1.3.1               11    100      0 100 ?
+ *>i 3.3.3.3/32       100.1.3.1               21    100      0 100 ?
+ *>i 4.4.4.4/32       100.1.3.1                0    100      0 100 ?
+ * i 8.8.8.8/32       10.1.1.1                 0    100      0 ?
+ * i 10.1.1.0/24      10.1.1.1                 0    100      0 ?
+ * i 10.1.2.0/24      10.1.1.1                 0    100      0 ?
+ *>i 100.1.3.0/24     10.1.1.1                 0    100      0 ?
+ *>i 172.16.1.0/24    100.1.3.1               20    100      0 100 ?
+ *>i 172.16.2.0/24    100.1.3.1               20    100      0 100 ?
+ *>i 172.16.3.0/24    100.1.3.1                0    100      0 100 ?
+
+Total number of prefixes 11 
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 200.1.3.2 routes' +++
+show bgp all neighbors 200.1.3.2 routes
+For address family: IPv4 Unicast
+BGP table version is 36, local router ID is 9.9.9.9
+Status codes: s suppressed, d damped, h history, * valid, > best, i - internal, 
+              r RIB-failure, S Stale, m multipath, b backup-path, f RT-Filter, 
+              x best-external, a additional-path, c RIB-compressed, 
+Origin codes: i - IGP, e - EGP, ? - incomplete
+RPKI validation codes: V valid, I invalid, N Not found
+
+     Network          Next Hop            Metric LocPrf Weight Path
+ *   3.3.3.3/32       200.1.3.2                              0 400 200 ?
+ *>  5.5.5.5/32       200.1.3.2                              0 400 200 ?
+ *>  6.6.6.6/32       200.1.3.2                              0 400 200 ?
+ *>  7.7.7.7/32       200.1.3.2                              0 400 200 ?
+ *>  12.12.1.0/24     200.1.3.2                0             0 400 i
+ *>  100.1.2.0/24     200.1.3.2                              0 400 200 100 ?
+ *>  192.168.1.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.2.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.3.0      200.1.3.2                              0 400 200 ?
+ *>  192.168.122.0    200.1.3.2                0             0 400 i
+ *>  200.1.2.0        200.1.3.2                              0 400 200 ?
+
+Total number of prefixes 11 
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 10.1.1.1 received-routes' +++
+show bgp all neighbors 10.1.1.1 received-routes
+For address family: IPv4 Unicast
+% Inbound soft reconfiguration not enabled on 10.1.1.1
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors 200.1.3.2 received-routes' +++
+show bgp all neighbors 200.1.3.2 received-routes
+For address family: IPv4 Unicast
+% Inbound soft reconfiguration not enabled on 200.1.3.2
+R9-300#
++++ R9-300: executing command 'show bgp all neighbors | i BGP neighbor' +++
+show bgp all neighbors | i BGP neighbor
+BGP neighbor is 10.1.1.1,  remote AS 300, internal link
+BGP neighbor is 200.1.3.2,  remote AS 400, external link
+R9-300#
+Could not learn <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Bgp'                                                                                                                |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllSummary'>, arguments: {'address_family':'','vrf':''}                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllClusterIds'>                                                                               |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighbors'>, arguments: {'address_family':'','neighbor':''}                                |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAll'>, arguments: {'address_family':''}                                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsAdvertisedRoutes'>, arguments: {'address_family':'','neighbor':'10.1.1.1'}        |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsAdvertisedRoutes'>, arguments: {'address_family':'','neighbor':'200.1.3.2'}       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsRoutes'>, arguments: {'address_family':'','neighbor':'10.1.1.1'}                  |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsRoutes'>, arguments: {'address_family':'','neighbor':'200.1.3.2'}                 |
+|====================================================================================================================================================|
+| - Commands not accepted on the device                                                                                                              |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllDetail'>, arguments: {'address_family':'','vrf':''}                                        |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpTemplatePeerSession'>                                                                       |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpTemplatePeerPolicy'>                                                                        |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowIpBgpAllDampeningParameters'>                                                                    |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsPolicy'>, arguments: {'neighbor':'10.1.1.1'}                                      |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsPolicy'>, arguments: {'neighbor':'200.1.3.2'}                                     |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>, arguments: {'address_family':'','neighbor':'10.1.1.1'}          |
+|   cmd: <class 'genie.libs.parser.ios.show_bgp.ShowBgpAllNeighborsReceivedRoutes'>, arguments: {'address_family':'','neighbor':'200.1.3.2'}         |
+|====================================================================================================================================================|

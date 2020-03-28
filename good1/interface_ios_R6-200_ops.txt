@@ -1,0 +1,756 @@
+{
+  "_exclude": [
+    "in_discards",
+    "in_octets",
+    "in_pkts",
+    "last_clear",
+    "out_octets",
+    "out_pkts",
+    "in_rate",
+    "out_rate",
+    "in_errors",
+    "in_crc_errors",
+    "in_rate_pkts",
+    "out_rate_pkts",
+    "in_broadcast_pkts",
+    "out_broadcast_pkts",
+    "in_multicast_pkts",
+    "out_multicast_pkts",
+    "in_unicast_pkts",
+    "out_unicast_pkts",
+    "last_change",
+    "mac_address",
+    "phys_address",
+    "((t|T)unnel.*)",
+    "(Null.*)",
+    "chars_out",
+    "chars_in",
+    "pkts_out",
+    "pkts_in",
+    "mgmt0"
+  ],
+  "attributes": null,
+  "commands": null,
+  "connections": null,
+  "context_manager": {},
+  "info": {
+    "Ethernet0/0": {
+      "accounting": {
+        "arp": {
+          "chars_in": 300,
+          "chars_out": 300,
+          "pkts_in": 5,
+          "pkts_out": 5
+        },
+        "cdp": {
+          "chars_in": 8786,
+          "chars_out": 8763,
+          "pkts_in": 23,
+          "pkts_out": 23
+        },
+        "dec mop": {
+          "chars_in": 154,
+          "chars_out": 154,
+          "pkts_in": 2,
+          "pkts_out": 2
+        },
+        "ip": {
+          "chars_in": 84786,
+          "chars_out": 176441,
+          "pkts_in": 1269,
+          "pkts_out": 1351
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 6420,
+          "pkts_in": 0,
+          "pkts_out": 107
+        }
+      },
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 29,
+        "in_octets": 90448,
+        "in_pkts": 1234,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 167203,
+        "out_pkts": 1422,
+        "rate": {
+          "in_rate": 3000,
+          "in_rate_pkts": 6,
+          "load_interval": 300,
+          "out_rate": 6000,
+          "out_rate_pkts": 6
+        }
+      },
+      "delay": 1000,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "ipv4": {
+        "200.1.2.1/24": {
+          "ip": "200.1.2.1",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "aabb.cc00.0100",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "aabb.cc00.0100",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet0/1": {
+      "accounting": {
+        "arp": {
+          "chars_in": 300,
+          "chars_out": 300,
+          "pkts_in": 5,
+          "pkts_out": 5
+        },
+        "cdp": {
+          "chars_in": 8382,
+          "chars_out": 8382,
+          "pkts_in": 22,
+          "pkts_out": 22
+        },
+        "dec mop": {
+          "chars_in": 154,
+          "chars_out": 154,
+          "pkts_in": 2,
+          "pkts_out": 2
+        },
+        "ip": {
+          "chars_in": 12488,
+          "chars_out": 12154,
+          "pkts_in": 130,
+          "pkts_out": 127
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 6420,
+          "pkts_in": 0,
+          "pkts_out": 107
+        }
+      },
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 153,
+        "in_octets": 21324,
+        "in_pkts": 159,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 27316,
+        "out_pkts": 262,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "ipv4": {
+        "192.168.3.2/24": {
+          "ip": "192.168.3.2",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "aabb.cc00.0110",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "aabb.cc00.0110",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet0/2": {
+      "accounting": {
+        "arp": {
+          "chars_in": 300,
+          "chars_out": 300,
+          "pkts_in": 5,
+          "pkts_out": 5
+        },
+        "cdp": {
+          "chars_in": 8382,
+          "chars_out": 8382,
+          "pkts_in": 22,
+          "pkts_out": 22
+        },
+        "dec mop": {
+          "chars_in": 154,
+          "chars_out": 154,
+          "pkts_in": 2,
+          "pkts_out": 2
+        },
+        "ip": {
+          "chars_in": 15783,
+          "chars_out": 15799,
+          "pkts_in": 175,
+          "pkts_out": 175
+        },
+        "other": {
+          "chars_in": 0,
+          "chars_out": 6420,
+          "pkts_in": 0,
+          "pkts_out": 107
+        }
+      },
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 147,
+        "in_octets": 24619,
+        "in_pkts": 204,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 31055,
+        "out_pkts": 311,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "ipv4": {
+        "192.168.1.2/24": {
+          "ip": "192.168.1.2",
+          "prefix_length": "24",
+          "secondary": false
+        }
+      },
+      "mac_address": "aabb.cc00.0120",
+      "mtu": 1500,
+      "oper_status": "up",
+      "phys_address": "aabb.cc00.0120",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet0/3": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "mac_address": "aabb.cc00.0130",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "aabb.cc00.0130",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet1/0": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "mac_address": "aabb.cc00.0101",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "aabb.cc00.0101",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet1/1": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "mac_address": "aabb.cc00.0111",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "aabb.cc00.0111",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet1/2": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "mac_address": "aabb.cc00.0121",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "aabb.cc00.0121",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Ethernet1/3": {
+      "bandwidth": 10000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 1000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "arpa"
+      },
+      "mac_address": "aabb.cc00.0131",
+      "mtu": 1500,
+      "oper_status": "down",
+      "phys_address": "aabb.cc00.0131",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "AmdP2"
+    },
+    "Loopback0": {
+      "bandwidth": 8000000,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 5000,
+      "enabled": true,
+      "encapsulation": {
+        "encapsulation": "loopback"
+      },
+      "ipv4": {
+        "6.6.6.6/32": {
+          "ip": "6.6.6.6",
+          "prefix_length": "32",
+          "secondary": false
+        }
+      },
+      "mtu": 1514,
+      "oper_status": "up",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "Loopback"
+    },
+    "Serial2/0": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial2/1": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial2/2": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial2/3": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial3/0": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial3/1": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial3/2": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    },
+    "Serial3/3": {
+      "bandwidth": 1544,
+      "counters": {
+        "in_broadcast_pkts": 0,
+        "in_crc_errors": 0,
+        "in_errors": 0,
+        "in_multicast_pkts": 0,
+        "in_octets": 0,
+        "in_pkts": 0,
+        "last_clear": "never",
+        "out_errors": 0,
+        "out_octets": 0,
+        "out_pkts": 0,
+        "rate": {
+          "in_rate": 0,
+          "in_rate_pkts": 0,
+          "load_interval": 300,
+          "out_rate": 0,
+          "out_rate_pkts": 0
+        }
+      },
+      "delay": 20000,
+      "enabled": false,
+      "encapsulation": {
+        "encapsulation": "hdlc"
+      },
+      "mtu": 1500,
+      "oper_status": "down",
+      "port_channel": {
+        "port_channel_member": false
+      },
+      "switchport_enable": false,
+      "type": "M4T"
+    }
+  }
+}

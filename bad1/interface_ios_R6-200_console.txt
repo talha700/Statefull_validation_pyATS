@@ -1,0 +1,668 @@
++++ R6-200: executing command 'show vrf' +++
+show vrf
+R6-200#
++++ R6-200: executing command 'show interfaces' +++
+show interfaces
+Ethernet0/0 is up, line protocol is up 
+  Hardware is AmdP2, address is aabb.cc00.0100 (bia aabb.cc00.0100)
+  Internet address is 200.1.2.1/24
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:00, output 00:00:00, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 1/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 3000 bits/sec, 4 packets/sec
+  5 minute output rate 4000 bits/sec, 4 packets/sec
+     3177 packets input, 205025 bytes, 0 no buffer
+     Received 34 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     3365 packets output, 430034 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet0/1 is up, line protocol is up 
+  Hardware is AmdP2, address is aabb.cc00.0110 (bia aabb.cc00.0110)
+  Internet address is 192.168.3.2/24
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:05, output 00:00:01, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     186 packets input, 25042 bytes, 0 no buffer
+     Received 180 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     313 packets output, 33345 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet0/2 is administratively down, line protocol is down 
+  Hardware is AmdP2, address is aabb.cc00.0120 (bia aabb.cc00.0120)
+  Internet address is 192.168.1.2/24
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input 00:00:48, output 00:00:48, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     231 packets input, 27836 bytes, 0 no buffer
+     Received 168 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     354 packets output, 35215 bytes, 0 underruns
+     0 output errors, 0 collisions, 1 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet0/3 is administratively down, line protocol is down 
+  Hardware is AmdP2, address is aabb.cc00.0130 (bia aabb.cc00.0130)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet1/0 is administratively down, line protocol is down 
+  Hardware is AmdP2, address is aabb.cc00.0101 (bia aabb.cc00.0101)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet1/1 is administratively down, line protocol is down 
+  Hardware is AmdP2, address is aabb.cc00.0111 (bia aabb.cc00.0111)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet1/2 is administratively down, line protocol is down 
+  Hardware is AmdP2, address is aabb.cc00.0121 (bia aabb.cc00.0121)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Ethernet1/3 is administratively down, line protocol is down 
+  Hardware is AmdP2, address is aabb.cc00.0131 (bia aabb.cc00.0131)
+  MTU 1500 bytes, BW 10000 Kbit/sec, DLY 1000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation ARPA, loopback not set
+  Keepalive set (10 sec)
+  ARP type: ARPA, ARP Timeout 04:00:00
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored
+     0 input packets with dribble condition detected
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 babbles, 0 late collision, 0 deferred
+     0 lost carrier, 0 no carrier
+     0 output buffer failures, 0 output buffers swapped out
+Serial2/0 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=up  DSR=up  DTR=down  RTS=down  CTS=up
+
+Serial2/1 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=up  DSR=up  DTR=down  RTS=down  CTS=up
+
+Serial2/2 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=up  DSR=up  DTR=down  RTS=down  CTS=up
+
+Serial2/3 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=up  DSR=up  DTR=down  RTS=down  CTS=up
+
+Serial3/0 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=down  DSR=down  DTR=up  RTS=up  CTS=down
+
+Serial3/1 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=down  DSR=down  DTR=up  RTS=up  CTS=down
+
+Serial3/2 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=down  DSR=down  DTR=up  RTS=up  CTS=down
+
+Serial3/3 is administratively down, line protocol is down 
+  Hardware is M4T
+  MTU 1500 bytes, BW 1544 Kbit/sec, DLY 20000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation HDLC, crc 16, loopback not set
+  Keepalive set (10 sec)
+  Restart-Delay is 0 secs
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/40 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+     1 carrier transitions     DCD=down  DSR=down  DTR=up  RTS=up  CTS=down
+
+Loopback0 is up, line protocol is up 
+  Hardware is Loopback
+  Internet address is 6.6.6.6/32
+  MTU 1514 bytes, BW 8000000 Kbit/sec, DLY 5000 usec, 
+     reliability 255/255, txload 1/255, rxload 1/255
+  Encapsulation LOOPBACK, loopback not set
+  Keepalive set (10 sec)
+  Last input never, output never, output hang never
+  Last clearing of "show interface" counters never
+  Input queue: 0/75/0/0 (size/max/drops/flushes); Total output drops: 0
+  Queueing strategy: fifo
+  Output queue: 0/0 (size/max)
+  5 minute input rate 0 bits/sec, 0 packets/sec
+  5 minute output rate 0 bits/sec, 0 packets/sec
+     0 packets input, 0 bytes, 0 no buffer
+     Received 0 broadcasts (0 IP multicasts)
+     0 runts, 0 giants, 0 throttles 
+     0 input errors, 0 CRC, 0 frame, 0 overrun, 0 ignored, 0 abort
+     0 packets output, 0 bytes, 0 underruns
+     0 output errors, 0 collisions, 0 interface resets
+     0 unknown protocol drops
+     0 output buffer failures, 0 output buffers swapped out
+R6-200#
++++ R6-200: executing command 'show interfaces accounting' +++
+show interfaces accounting
+Ethernet0/0 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+                   Other          0          0        127       7620
+                      IP       3201     197434       3270     436580
+                 DEC MOP          3        231          2        154
+                     ARP          5        300          5        300
+                     CDP         27      10314         26       9906
+Ethernet0/1 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+                   Other          0          0        127       7620
+                      IP        153      14682        153      15365
+                 DEC MOP          2        154          2        154
+                     ARP          5        300          5        300
+                     CDP         26       9906         26       9906
+Interface Ethernet0/2 is disabled
+
+Interface Ethernet0/3 is disabled
+
+Interface Ethernet1/0 is disabled
+
+Interface Ethernet1/1 is disabled
+
+Interface Ethernet1/2 is disabled
+
+Interface Ethernet1/3 is disabled
+
+Interface Serial2/0 is disabled
+
+Interface Serial2/1 is disabled
+
+Interface Serial2/2 is disabled
+
+Interface Serial2/3 is disabled
+
+Interface Serial3/0 is disabled
+
+Interface Serial3/1 is disabled
+
+Interface Serial3/2 is disabled
+
+Interface Serial3/3 is disabled
+
+Loopback0 
+                Protocol    Pkts In   Chars In   Pkts Out  Chars Out
+No traffic sent or received on this interface.
+R6-200#
++++ R6-200: executing command 'show ip interface' +++
+show ip interface
+Ethernet0/0 is up, line protocol is up
+  Internet address is 200.1.2.1/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.251 224.0.0.5 224.0.0.6
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  IPv4 WCCP Redirect outbound is disabled
+  IPv4 WCCP Redirect inbound is disabled
+  IPv4 WCCP Redirect exclude is disabled
+Ethernet0/1 is up, line protocol is up
+  Internet address is 192.168.3.2/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.251 224.0.0.5 224.0.0.6
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  IPv4 WCCP Redirect outbound is disabled
+  IPv4 WCCP Redirect inbound is disabled
+  IPv4 WCCP Redirect exclude is disabled
+Ethernet0/2 is administratively down, line protocol is down
+  Internet address is 192.168.1.2/24
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1500 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.251 224.0.0.5
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  IPv4 WCCP Redirect outbound is disabled
+  IPv4 WCCP Redirect inbound is disabled
+  IPv4 WCCP Redirect exclude is disabled
+Ethernet0/3 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Ethernet1/0 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Ethernet1/1 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Ethernet1/2 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Ethernet1/3 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial2/0 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial2/1 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial2/2 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial2/3 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial3/0 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial3/1 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial3/2 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Serial3/3 is administratively down, line protocol is down
+  Internet protocol processing disabled
+Loopback0 is up, line protocol is up
+  Internet address is 6.6.6.6/32
+  Broadcast address is 255.255.255.255
+  Address determined by non-volatile memory
+  MTU is 1514 bytes
+  Helper address is not set
+  Directed broadcast forwarding is disabled
+  Multicast reserved groups joined: 224.0.0.5
+  Outgoing access list is not set
+  Inbound  access list is not set
+  Proxy ARP is enabled
+  Local Proxy ARP is disabled
+  Security level is default
+  Split horizon is enabled
+  ICMP redirects are always sent
+  ICMP unreachables are always sent
+  ICMP mask replies are never sent
+  IP fast switching is enabled
+  IP fast switching on the same interface is disabled
+  IP Flow switching is disabled
+  IP CEF switching is enabled
+  IP CEF switching turbo vector
+  IP Null turbo vector
+  IP multicast fast switching is enabled
+  IP multicast distributed fast switching is disabled
+  IP route-cache flags are Fast, CEF
+  Router Discovery is disabled
+  IP output packet accounting is disabled
+  IP access violation accounting is disabled
+  TCP/IP header compression is disabled
+  RTP/IP header compression is disabled
+  Policy routing is disabled
+  Network address translation is disabled
+  BGP Policy Mapping is disabled
+  Input features: MCI Check
+  IPv4 WCCP Redirect outbound is disabled
+  IPv4 WCCP Redirect inbound is disabled
+  IPv4 WCCP Redirect exclude is disabled
+R6-200#
++++ R6-200: executing command 'show ipv6 interface' +++
+show ipv6 interface
+R6-200#
+Could not learn <class 'genie.libs.parser.iosxe.show_interface.ShowIpv6Interface'>
+Parser Output is empty
++====================================================================================================================================================+
+| Commands for learning feature 'Interface'                                                                                                          |
++====================================================================================================================================================+
+| - Parsed commands                                                                                                                                  |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowInterfaces'>, arguments: {'interface':''}                                                |
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowInterfacesAccounting'>, arguments: {'interface':''}                                      |
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowIpInterface'>, arguments: {'interface':''}                                               |
+|====================================================================================================================================================|
+| - Commands with empty output                                                                                                                       |
+|----------------------------------------------------------------------------------------------------------------------------------------------------|
+|   cmd: <class 'genie.libs.parser.iosxe.show_vrf.ShowVrf'>, arguments: {'vrf':''}                                                                   |
+|   cmd: <class 'genie.libs.parser.iosxe.show_interface.ShowIpv6Interface'>, arguments: {'interface':''}                                             |
+|====================================================================================================================================================|

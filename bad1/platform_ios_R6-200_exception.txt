@@ -1,0 +1,14 @@
+Issue while parsing: <class 'genie.libs.parser.ios.show_platform.Dir'>
+
+Traceback (most recent call last):
+  File "src/genie/cli/commands/learn.py", line 343, in genie.cli.commands.learn.LearnCommand._retrieve_ops
+  File "/home/talha_javaid/pyats/lib/python3.7/site-packages/genie/libs/ops/platform/ios/platform.py", line 134, in learn
+    self.make(final_call=True)
+  File "/home/talha_javaid/pyats/lib/python3.7/site-packages/genie/ops/base/base.py", line 101, in make
+    self.maker.make(*args, **kwargs)
+  File "src/genie/ops/base/maker.py", line 310, in genie.ops.base.maker.Maker.make
+  File "src/genie/ops/base/maker.py", line 414, in genie.ops.base.maker.Maker._call_parser
+  File "src/genie/metaparser/_metaparser.py", line 302, in genie.metaparser._metaparser.MetaParser.parse
+  File "src/genie/metaparser/_metaparser.py", line 284, in genie.metaparser._metaparser.MetaParser.parse
+  File "src/genie/metaparser/util/schemaengine.py", line 405, in genie.metaparser.util.schemaengine.Schema.validate
+genie.metaparser.util.exceptions.SchemaMissingKeyError: Missing keys: [['dir', 'system:/', 'files']]
