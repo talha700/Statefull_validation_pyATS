@@ -47,4 +47,31 @@
     +  oper_status: down
     -  oper_status: up
 
-
+    --- good1/ospf_ios_R6-200_ops.txt
+    +++ bad1/ospf_ios_R6-200_ops.txt
+    info:
+     vrf:
+      default:
+       address_family:
+        ipv4:
+         instance:
+          1:
+           areas:
+            0.0.0.0:
+             interfaces:
+              Ethernet0/2:
+    +           enable: False
+    -           enable: True
+    -           lls: True
+    -           neighbors: 
+    -            5.5.5.5: 
+    -             address: 192.168.1.1
+    -             bdr_ip_addr: 192.168.1.1
+    -             dead_timer: 00:00:36
+    -             dr_ip_addr: 192.168.1.2
+    -             neighbor_router_id: 5.5.5.5
+    -             state: full
+    -             statistics: 
+    -              nbr_event_count: 6
+    -              nbr_retrans_qlen: 0
+    -           passive: False
